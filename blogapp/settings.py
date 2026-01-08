@@ -31,14 +31,15 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
-    'django.contrib.admin',
+INSTALLED_APPS = [ 
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app',
+    'django.contrib.admin',
+    
 ]
 
 MIDDLEWARE = [
@@ -69,6 +70,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'blogapp.wsgi.application'
+
+
+# default logout page
 
 
 # Database
@@ -120,8 +124,9 @@ STATIC_URL = 'static/'
 MEDIA_URL='/media/'
 MEDIA_ROOT=BASE_DIR / 'upload'
 
+LOGIN_REDIRECT_URL='/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+ # must match the URL you created
