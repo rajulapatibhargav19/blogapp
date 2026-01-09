@@ -48,6 +48,8 @@ p,
 a {
   font-size: 1.6rem;
   color: var(--des);
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 input,
@@ -341,6 +343,13 @@ header .container {
   font-size: 1.6rem;
   font-weight: 600;
 }
+.card h3 a {
+    color: var(--black) !important;
+    font-weight: 600;
+    opacity: 1 !important;
+    text-decoration: none;
+}
+
 
 .card .post-img {
   width: 100%;
@@ -947,6 +956,9 @@ main {
   .s-active input {
     width: 100%;
   }
+  .card {
+  opacity: 1 !important;
+}
   .s-active {
     width: 80%;
   }
@@ -1064,3 +1076,13 @@ main {
 .reply button {
   background: transparent;
 }
+.blog-tags .tag a.bookmark-title {
+    color: #404040 !important;
+    font-weight: 600 !important;
+    font-size: 1.6rem !important;
+    opacity: 1 !important;
+    text-decoration: none !important;
+}
+
+
+
